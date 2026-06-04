@@ -1,0 +1,113 @@
+<h1 align="center">👋 Hi, I'm Abdul Raqeeb Khatri</h1>
+<p align="center"><strong>Automation Builder · Desktop &amp; Web Developer · AI Tinkerer</strong></p>
+
+<p align="center">
+  <a href="mailto:abdulraqeeb310@gmail.com"><img src="https://img.shields.io/badge/Email-abdulraqeeb310@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://github.com/Ark310"><img src="https://img.shields.io/badge/GitHub-Ark310-181717?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-40-success?style=flat-square&logo=googlescholar&logoColor=white"></a>
+</p>
+
+> I build practical tools that kill repetitive work — browser automation, desktop apps, data pipelines, and AI-powered assistants. **Almost everything here started as a real problem at work that I decided to automate out of existence.** I care about clean engineering: tests, packaging, honest docs, and tools that real people actually use.
+
+---
+
+## 🚀 Featured Project
+
+### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant) — *Scrape → Index → Chat*
+
+A complete local **RAG pipeline** packaged as two Windows desktop apps: a **Playwright scraper** that crawls a Confluence knowledge base into a clean markdown library, and a **PySide6 chatbot** that answers questions over it using ChromaDB vector search, CrossEncoder reranking, and Claude — with **verified, clickable citations and zero hallucinated links**.
+
+`Python` · `Playwright` · `ChromaDB` · `sentence-transformers` · `PySide6` · `Claude` · `PyInstaller` · `pytest (15+ modules)`
+
+---
+
+## 🗂️ Project Gallery
+
+### 🤖 AI & Developer Tools
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Confluence scraper + local RAG chatbot with citation verification | Playwright · ChromaDB · PySide6 · Claude |
+| [**claude-sessions-tracker**](https://github.com/Ark310/claude-sessions-tracker) | Desktop dashboard for Claude Code session history, token usage & costs | CustomTkinter · Matplotlib · SQLite · Watchdog |
+| [**claude-session-tracker**](https://github.com/Ark310/claude-session-tracker) | Next.js web dashboard to browse, control & audit Claude Code sessions | Next.js · TypeScript · Tailwind · Vitest |
+| [**enhancement-spec-generator**](https://github.com/Ark310/enhancement-spec-generator) | Claude Code plugin: 5-phase interview → formal spec `.docx` | Claude Code Skills · python-docx |
+| [**observatory**](https://github.com/Ark310/observatory) 🍴 | *Fork* — added ghost session tracking, a sessions panel & startup scan (+4,139 lines) | Bun · TypeScript · xterm.js · CodeMirror |
+
+### ⚙️ Browser & Workflow Automation
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**report-downloader**](https://github.com/Ark310/report-downloader) | Batch PDF report downloads for many clients in one run (52 unit tests) | Playwright · Tkinter · DPAPI · PyInstaller |
+| [**ticket-watchlist-updater**](https://github.com/Ark310/ticket-watchlist-updater) | Syncs an Excel watchlist from a live ticket portal in seconds | Playwright · openpyxl · Tkinter |
+| [**enhancement-checks-automation**](https://github.com/Ark310/enhancement-checks-automation) | 5-phase Selenium toolkit that audits & remediates ticket backlogs in bulk | Selenium · pandas · Tkinter |
+| [**ticket-auto-updater**](https://github.com/Ark310/ticket-auto-updater) | Chrome extension: one-click bulk ticket field updates | Chrome MV3 · Vanilla JS |
+| [**tickets-due-response-monitor**](https://github.com/Ark310/tickets-due-response-monitor) | Daily queue monitor with threshold-based Teams alerts *(in production since Jan 2026)* | Playwright · Power Automate Desktop |
+
+### 📊 Reporting & Analytics
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**weekly-ticket-status-reporter**](https://github.com/Ark310/weekly-ticket-status-reporter) | Weekly metrics workbook with week-over-week trend analysis | pandas · openpyxl · Tkinter |
+| [**average-days-in-status**](https://github.com/Ark310/average-days-in-status) | SQL + Python toolkit for ticket status-duration analysis | T-SQL · Playwright · CDP printToPDF |
+
+### 🌐 Web
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**HeartGuard**](https://github.com/Ark310/HeartGuard) | Apple-inspired single-page site with an inline admin edit mode | PHP · Vanilla JS · no build step |
+
+---
+
+## 📜 Certifications
+
+**40 certificates** across Cloud, AI, Security & Networking — **[browse the full gallery →](certifications/)**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS-Cloud-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white">
+  <img src="https://img.shields.io/badge/Anthropic-AI-D4A27F?style=flat-square&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/Cisco-Networking_&_Security-1BA0D7?style=flat-square&logo=cisco&logoColor=white">
+  <img src="https://img.shields.io/badge/Udemy-Ethical_Hacking-A435F0?style=flat-square&logo=udemy&logoColor=white">
+</p>
+
+- ☁️ **AWS** — *AWS SimuLearn: Cloud Practitioner* (flagship) + Technical Essentials, EC2, S3, VPC, IAM, Lambda, and more (33 total)
+- 🤖 **Anthropic** — Claude 101 · Claude Code 101 · Introduction to Claude Cowork
+- 🔐 **Cisco** — Introduction to Cybersecurity · Network Support and Security · IT Customer Support Basics
+- 🎯 **Udemy** — Learn Ethical Hacking From Scratch (16 hrs)
+
+---
+
+## 🛠️ Skills Snapshot
+
+**Languages & Core**
+`Python` · `JavaScript` · `TypeScript` · `SQL (T-SQL)` · `PHP` · `HTML/CSS`
+
+**Automation**
+`Playwright` · `Selenium` · `Chrome Extensions (MV3)` · `Power Automate Desktop` · `Chrome DevTools Protocol`
+
+**AI / ML**
+`RAG pipelines` · `ChromaDB` · `sentence-transformers` · `CrossEncoder reranking` · `Claude API & Claude Code` · `Prompt engineering` · `Claude Code plugins/skills`
+
+**Web & Desktop**
+`Next.js` · `React` · `Tailwind` · `PySide6 (Qt)` · `Tkinter / CustomTkinter`
+
+**Data**
+`pandas` · `openpyxl` · `Matplotlib` · `SQLite`
+
+**Cloud**
+`AWS (EC2, S3, VPC, IAM, Lambda)` · `Cloud security & cost fundamentals`
+
+**Engineering Practice**
+`pytest / Vitest` · `PyInstaller packaging` · `Windows DPAPI credential encryption` · `Threaded GUI architecture` · `Git`
+
+---
+
+## 🧭 About This Portfolio
+
+- Every project links to a **self-contained, public repo** — README, license, and a runnable quickstart included.
+- All credentials, internal URLs, and company-specific identifiers are replaced with clear placeholders (`YOUR_..._HERE`).
+- Where a project builds on existing open-source work (e.g. [observatory](https://github.com/Ark310/observatory)), the upstream is **credited honestly** and my own changes are highlighted.
+
+---
+
+<p align="center"><em>Built with real problems, shipped to real users.</em> ✨<br>
+📫 <a href="mailto:abdulraqeeb310@gmail.com">abdulraqeeb310@gmail.com</a></p>
