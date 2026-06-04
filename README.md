@@ -3,8 +3,9 @@
 
 <p align="center">
   <a href="mailto:abdulraqeeb310@gmail.com"><img src="https://img.shields.io/badge/Email-abdulraqeeb310@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/abdulraqeebkhatri"><img src="https://img.shields.io/badge/LinkedIn-abdulraqeebkhatri-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://github.com/Ark310"><img src="https://img.shields.io/badge/GitHub-Ark310-181717?style=flat-square&logo=github&logoColor=white"></a>
-  <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-40-success?style=flat-square&logo=googlescholar&logoColor=white"></a>
+  <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-42-success?style=flat-square&logo=googlescholar&logoColor=white"></a>
 </p>
 
 > I build practical tools that kill repetitive work — browser automation, desktop apps, data pipelines, and AI-powered assistants. **Almost everything here started as a real problem at work that I decided to automate out of existence.** I care about clean engineering: tests, packaging, honest docs, and tools that real people actually use.
@@ -73,31 +74,51 @@ A complete local **RAG pipeline** packaged as two Windows desktop apps: a **Play
 - 🤖 **Anthropic** — Claude 101 · Claude Code 101 · Introduction to Claude Cowork
 - 🔐 **Cisco** — Introduction to Cybersecurity · Network Support and Security · IT Customer Support Basics
 - 🎯 **Udemy** — Learn Ethical Hacking From Scratch (16 hrs)
+- 🟦 **Microsoft** — Azure Fundamentals (AZ-900)
+- 🟨 **Google** — IT Automation with Python
 
 ---
 
 ## 🛠️ Skills Snapshot
 
-**Languages & Core**
-`Python` · `JavaScript` · `TypeScript` · `SQL (T-SQL)` · `PHP` · `HTML/CSS`
+**Languages**
+`Python` · `Java` · `JavaScript` · `TypeScript` · `SQL (T-SQL)` · `C` · `C++` · `Bash` · `PHP` · `HTML/CSS`
 
-**Automation**
-`Playwright` · `Selenium` · `Chrome Extensions (MV3)` · `Power Automate Desktop` · `Chrome DevTools Protocol`
+**AI & Automation**
+`RAG pipelines` · `ChromaDB` · `sentence-transformers` · `CrossEncoder reranking` · `Claude API & Claude Code` · `Prompt engineering` · `Microsoft Copilot` · `Agentic / AI-assisted workflows` · `Base44` · `Playwright` · `Selenium` · `Chrome Extensions (MV3)` · `Chrome DevTools Protocol`
 
-**AI / ML**
-`RAG pipelines` · `ChromaDB` · `sentence-transformers` · `CrossEncoder reranking` · `Claude API & Claude Code` · `Prompt engineering` · `Claude Code plugins/skills`
+**Microsoft Power Platform**
+`Power Automate` · `Power Platform` · `Process automation` · `Teams integrations` · `Reporting automation`
 
 **Web & Desktop**
-`Next.js` · `React` · `Tailwind` · `PySide6 (Qt)` · `Tkinter / CustomTkinter`
+`Next.js` · `React` · `Spring` · `FastAPI` · `Bootstrap` · `REST APIs` · `Tailwind` · `PySide6 (Qt)` · `Tkinter / CustomTkinter`
 
-**Data**
-`pandas` · `openpyxl` · `Matplotlib` · `SQLite`
+**Data & BI**
+`pandas` · `NumPy` · `openpyxl` · `Matplotlib` · `Power BI` · `Excel (advanced)` · `Dashboard development` · `SQLite` · `MongoDB`
 
 **Cloud**
-`AWS (EC2, S3, VPC, IAM, Lambda)` · `Cloud security & cost fundamentals`
+`AWS (EC2, S3, VPC, IAM, Lambda)` · `Microsoft Azure (AZ-900)` · `Cloud security & cost fundamentals`
+
+**Security & Compliance**
+`NIST CSF 2.0` · `ISO 27002` · `SIEM` · `Role-based access management` · `Audit-ready documentation` · `Ethical hacking fundamentals`
+
+**Tooling & Platforms**
+`Git` · `Docker` · `JIRA` · `ERP (SAP)` · `Active Directory` · `Cisco Webex` · `MS365` · `Eclipse / VS Code` · `Windows · macOS · Linux`
 
 **Engineering Practice**
-`pytest / Vitest` · `PyInstaller packaging` · `Windows DPAPI credential encryption` · `Threaded GUI architecture` · `Git`
+`pytest / Vitest` · `PyInstaller packaging` · `Windows DPAPI credential encryption` · `Threaded GUI architecture` · `Requirements gathering` · `Stakeholder coordination`
+
+---
+
+## 💼 What I've Worked On
+
+A distilled look at the kind of work I do — turning manual, error-prone processes into reliable, automated systems:
+
+- **⚡ Workflow automation at scale** — designed Microsoft **Power Automate** workflows that automate data collection, file/report downloading & sorting, post-event data funneling, sheet cleanup, and threshold-based **Teams alerting** — cutting repetitive manual effort across recurring processes.
+- **📊 Reporting & dashboards** — built and maintained dynamic dashboards (Power Automate · Power BI · Excel) that standardize reporting workflows, surface KPIs and priorities, and speed up data-driven decision-making.
+- **🛠️ Enterprise support & access management** — supported **250+ enterprise CRM users** across macOS and Windows, managed **role-based access**, and authored **audit-ready** ticket documentation that strengthened data security and operational continuity.
+- **🤖 AI-assisted engineering** — build practical tools with Claude Code, RAG pipelines, and agentic workflows; author Claude Code **plugins/skills** that turn unstructured input into formal deliverables.
+- **📚 Onboarding & knowledge transfer** — created training programs and step-by-step documentation that simplify onboarding for enterprise tools and standardize processes across teams.
 
 ---
 

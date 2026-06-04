@@ -1,14 +1,16 @@
 <h1 align="center">📜 Certifications</h1>
-<p align="center"><em>40 certificates across Cloud, AI, Security &amp; Networking — earned by Abdul Raqeeb Khatri.</em></p>
+<p align="center"><em>42 credentials across Cloud, AI, Security &amp; Networking — earned by Abdul Raqeeb Khatri.</em></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AWS-33_certs-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white">
-  <img src="https://img.shields.io/badge/Anthropic-3_certs-D4A27F?style=flat-square&logo=anthropic&logoColor=white">
-  <img src="https://img.shields.io/badge/Cisco-3_certs-1BA0D7?style=flat-square&logo=cisco&logoColor=white">
-  <img src="https://img.shields.io/badge/Udemy-1_cert-A435F0?style=flat-square&logo=udemy&logoColor=white">
+  <img src="https://img.shields.io/badge/AWS-33-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white">
+  <img src="https://img.shields.io/badge/Anthropic-3-D4A27F?style=flat-square&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/Cisco-3-1BA0D7?style=flat-square&logo=cisco&logoColor=white">
+  <img src="https://img.shields.io/badge/Udemy-1-A435F0?style=flat-square&logo=udemy&logoColor=white">
+  <img src="https://img.shields.io/badge/Microsoft-1-0078D4?style=flat-square&logo=microsoft&logoColor=white">
+  <img src="https://img.shields.io/badge/Google-1-4285F4?style=flat-square&logo=google&logoColor=white">
 </p>
 
-> A snapshot of continuous learning across the four areas my projects live in: **Cloud (AWS)**, **AI (Anthropic)**, **Security & Networking (Cisco + Udemy)**. Click any thumbnail to open the certificate. *More on the way.* ✨
+> A snapshot of continuous learning across the areas my projects live in: **Cloud (AWS · Azure)**, **AI (Anthropic)**, **Security & Networking (Cisco · Udemy)**, and **Automation (Google)**. Click any thumbnail to open the certificate. **40** include downloadable certificate files; **2** are listed with files coming soon. *More on the way.* ✨
 
 ---
 
@@ -118,6 +120,24 @@ Summary: [AWS Account Setup Learning Plan](aws/account-setup-learning-plan/aws-a
 | Certificate | Instructor | Length | Link |
 |-------------|-----------|--------|------|
 | Learn Ethical Hacking From Scratch | Zaid Sabih · zSecurity | 16 hrs | [PDF](udemy/learn-ethical-hacking-from-scratch.pdf) |
+
+---
+
+## 🟦 Microsoft
+*Issued by Microsoft*
+
+| Certificate | Status |
+|-------------|--------|
+| Azure Fundamentals (AZ-900) | ✅ Earned — *certificate file coming soon* |
+
+---
+
+## 🟨 Google
+*Issued by Google*
+
+| Certificate | Status |
+|-------------|--------|
+| IT Automation with Python | ✅ Earned — *certificate file coming soon* |
 
 ---
 
