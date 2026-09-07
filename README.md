@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="mailto:abdulraqeebkhatri310@gmail.com"><img src="https://img.shields.io/badge/Email-abdulraqeeb310@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="mailto:abdulraqeebkhatri310@gmail.com"><img src="https://img.shields.io/badge/Email-abdulraqeebkhatri310@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/abdulraqeebkhatri"><img src="https://img.shields.io/badge/LinkedIn-abdulraqeebkhatri-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://github.com/Ark310"><img src="https://img.shields.io/badge/GitHub-Ark310-181717?style=flat-square&logo=github&logoColor=white"></a>
   <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-View-success?style=flat-square&logo=googlescholar&logoColor=white"></a>
