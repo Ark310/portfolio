@@ -8,7 +8,7 @@
   <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-42-success?style=flat-square&logo=googlescholar&logoColor=white"></a>
 </p>
 
-> I build practical tools that kill repetitive work — browser automation, desktop apps, data pipelines, and AI-powered assistants. **Almost everything here started as a real problem at work that I decided to automate out of existence.** I care about clean engineering: tests, packaging, honest docs, and tools that real people actually use.
+> I build practical tools that replace repetitive work — browser automation, desktop apps, data pipelines, and AI-powered assistants. **Almost everything here started as a real problem at work that I decided to automate out of existence.** I care about clean engineering: tests, packaging, honest docs, and tools that real people actually use.
 
 ---
 
@@ -125,7 +125,6 @@ A distilled look at the kind of work I do — turning manual, error-prone proces
 ## 🧭 About This Portfolio
 
 - Every project links to a **self-contained, public repo** — README, license, and a runnable quickstart included.
-- All credentials, internal URLs, and company-specific identifiers are replaced with clear placeholders (`YOUR_..._HERE`).
 - Where a project builds on existing open-source work (e.g. [observatory](https://github.com/Ark310/observatory)), the upstream is **credited honestly** and my own changes are highlighted.
 
 ---
