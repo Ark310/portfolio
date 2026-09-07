@@ -1,4 +1,3 @@
-```markdown
 <h1 align="center">👋 Hi, I'm Abdul Raqeeb Khatri</h1>
 
 <p align="center">
@@ -271,5 +270,3 @@ I'm especially interested in opportunities where I can combine **hands-on suppor
 <p align="center">
 <em>Built around real problems, practical solutions, and continuous learning.</em> ✨
 </p>
-```
-
