@@ -51,13 +51,24 @@ Outside traditional IT support, I build tools that automate repetitive work, imp
 
 ## 🚀 Featured Project
 
-### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant) — *Scrape → Index → Chat*
+### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant): *Scrape → Index → Chat, fully local*
 
-A complete local **RAG pipeline** packaged as two Windows desktop applications: a **Playwright scraper** that crawls a Confluence knowledge base into a structured Markdown library and a **PySide6 chatbot** that answers questions using ChromaDB vector search, CrossEncoder reranking, and Claude.
+A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant**: ChromaDB vector search + BM25 with reciprocal-rank fusion, CrossEncoder reranking, **verified clickable citations**, PII-redacted ticket context, and a choice of Claude, ChatGPT or an **on-prem Ollama model** running on a local GPU. It grew over 361 commits, from a scraper to v3 "KB Guru", including a measured retrieval overhaul (recall@8 0.816 → 0.920).
 
-The system includes verified clickable citations, local data processing, and safeguards against hallucinated source links.
+`Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (791 passing)`
 
-`Python` · `Playwright` · `ChromaDB` · `sentence-transformers` · `PySide6` · `Claude` · `PyInstaller` · `pytest`
+---
+
+## 🤖 Shipping with AI
+
+Every project below was built with **Claude Code** (and some with Codex) as a pair programmer. I set direction, specs and review; the AI accelerates implementation and tests. Every commit carries a `Co-Authored-By: Claude` trailer, and each repo's README has a **Built with AI** section with real numbers.
+
+| | |
+|---|---|
+| 📦 **27 repositories** | 931 commits · Jan → Sep 2026 |
+| ✅ **3,000+ passing tests** | pytest suites across the desktop apps |
+| 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
+| 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
 
 ---
 
@@ -67,34 +78,68 @@ The system includes verified clickable citations, local data processing, and saf
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Confluence scraper + local RAG chatbot with citation verification | Playwright · ChromaDB · PySide6 · Claude |
-| [**claude-sessions-tracker**](https://github.com/Ark310/claude-sessions-tracker) | Desktop dashboard for Claude Code session history, token usage & costs | CustomTkinter · Matplotlib · SQLite · Watchdog |
+| [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Scraper → markdown library → hybrid-RAG chatbot with verified citations and an on-prem LLM option | Playwright · ChromaDB · BM25/RRF · PySide6 · Claude · Ollama |
+| [**local-llm-setup**](https://github.com/Ark310/local-llm-setup) | Two local LLM stacks (a KYC analyst and the KB chatbot) on one 8 GB GPU, with a reasoning gateway | Ollama · PowerShell · Caddy |
+| [**enhancement-spec-generator**](https://github.com/Ark310/enhancement-spec-generator) | `/spec` Claude Code plugin: brain dump in, validated specification `.docx` out | Claude Code Skills · python-docx · pytest |
+| [**claude-sessions-tracker**](https://github.com/Ark310/claude-sessions-tracker) | Desktop dashboard for local Claude Code sessions: tokens, models, subagents, session management | CustomTkinter · Matplotlib · watchdog · SQLite |
 | [**claude-session-tracker**](https://github.com/Ark310/claude-session-tracker) | Next.js web dashboard to browse, control & audit Claude Code sessions | Next.js · TypeScript · Tailwind · Vitest |
-| [**enhancement-spec-generator**](https://github.com/Ark310/enhancement-spec-generator) | Claude Code plugin: structured interview → formal specification document | Claude Code Skills · python-docx |
+| [**codex-session-manager**](https://github.com/Ark310/codex-session-manager) | Tkinter monitor for local Codex sessions: processes, tokens, context-window use | Python · Tkinter |
+| [**codex-skills**](https://github.com/Ark310/codex-skills) | Five Claude-style agent skills ported to Codex (feature dev, PR review, browser testing, data eng.) | Agent Skills · Markdown |
+| [**claude-config-transfer**](https://github.com/Ark310/claude-config-transfer) | Export/import a full Claude Code setup (settings, skills, plugins) to another Windows machine, no secrets | PowerShell |
+| [**claude-account-switcher**](https://github.com/Ark310/claude-account-switcher) 🍴 | Fork of usage-monitor-for-claude adding DPAPI-encrypted multi-account switching with rollback | Python · DPAPI · pytest |
+| [**usage-monitor-for-codex**](https://github.com/Ark310/usage-monitor-for-codex) 🍴 | Port of usage-monitor-for-claude to Codex: tray monitor for 5-hour and weekly limits | Python · JSON-RPC · pystray |
 | [**observatory**](https://github.com/Ark310/observatory) 🍴 | Fork with additional session tracking, session management, and startup scanning | Bun · TypeScript · xterm.js · CodeMirror |
 
-### ⚙️ Browser & Workflow Automation
+### ⚙️ Desktop & Browser Automation
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [**report-downloader**](https://github.com/Ark310/report-downloader) | Batch PDF report downloads for multiple clients in one run | Playwright · Tkinter · DPAPI · PyInstaller |
-| [**ticket-watchlist-updater**](https://github.com/Ark310/ticket-watchlist-updater) | Synchronizes an Excel watchlist from a live ticket portal | Playwright · openpyxl · Tkinter |
-| [**enhancement-checks-automation**](https://github.com/Ark310/enhancement-checks-automation) | Selenium toolkit for auditing and processing ticket backlogs | Selenium · pandas · Tkinter |
-| [**ticket-auto-updater**](https://github.com/Ark310/ticket-auto-updater) | Chrome extension for bulk ticket-field updates | Chrome MV3 · Vanilla JS |
-| [**tickets-due-response-monitor**](https://github.com/Ark310/tickets-due-response-monitor) | Queue monitoring with threshold-based Microsoft Teams alerts | Playwright · Power Automate Desktop |
+| [**report-downloader**](https://github.com/Ark310/report-downloader) | One-click month-end PDF/Excel dashboard exports for ~30 clients, plus an auto-built billing CSV | Playwright · Tkinter · openpyxl · PyInstaller |
+| [**incident-report-scraper**](https://github.com/Ark310/incident-report-scraper) | Scrapes a support portal's incidents into a living Excel + offline HTML dashboard with sentiment | Playwright · PySide6 · openpyxl · VADER |
+| [**portal-account-deactivator**](https://github.com/Ark310/portal-account-deactivator) | Safe batch offboarding of portal accounts: preview, confirm gate, verification, audit trail | PySide6 · Playwright · keyring |
+| [**mailing-list-builder**](https://github.com/Ark310/mailing-list-builder) | Mailing lists from the portal roster as saved rules + exceptions, one-click Outlook export | PySide6 · Playwright · keyring |
+| [**ticket-watchlist-updater**](https://github.com/Ark310/ticket-watchlist-updater) | One-click sync of a live ticket export into a multi-sheet Excel watchlist (117 real runs) | Playwright · openpyxl · Tkinter |
+| [**enhancement-checks-automation**](https://github.com/Ark310/enhancement-checks-automation) | Five-phase Selenium clean-up of 147 enhancement tickets with dry runs and audit trails | Selenium · pandas · Tkinter |
+| [**ticket-auto-updater**](https://github.com/Ark310/ticket-auto-updater) | Chrome extension for one-click ticket-field updates | Chrome MV3 · Vanilla JS |
+| [**tickets-due-response-monitor**](https://github.com/Ark310/tickets-due-response-monitor) | Daily queue monitor with threshold alerts via Power Automate Desktop (79 logged runs) | Playwright · pandas · PAD |
 
 ### 📊 Reporting & Analytics
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [**weekly-ticket-status-reporter**](https://github.com/Ark310/weekly-ticket-status-reporter) | Weekly metrics workbook with week-over-week trend analysis | pandas · openpyxl · Tkinter |
-| [**average-days-in-status**](https://github.com/Ark310/average-days-in-status) | SQL + Python toolkit for ticket status-duration analysis | T-SQL · Playwright · CDP |
+| [**weekly-time-reports**](https://github.com/Ark310/weekly-time-reports) | Weekly per-person hours report rebuilt from a portal; matched the legacy workbook 48/48 (783 tests) | PySide6 · Playwright · openpyxl · Outlook |
+| [**resource-matrix**](https://github.com/Ark310/resource-matrix) | Monthly capacity, utilisation and sprint-load matrix, reconciled to the hour (510 tests) | PySide6 · Playwright · T-SQL |
+| [**support-portal-dashboard-widgets**](https://github.com/Ark310/support-portal-dashboard-widgets) | SQL dashboard widgets (misclassification checks, SLA, open tickets) and the bugs behind the numbers | T-SQL · SQL Server |
+| [**weekly-ticket-status-reporter**](https://github.com/Ark310/weekly-ticket-status-reporter) | Weekly backlog status workbook with week-over-week trends from a ticket export | pandas · openpyxl · Tkinter |
+| [**average-days-in-status**](https://github.com/Ark310/average-days-in-status) | Time-in-status analytics (SQL) plus a batch ticket-to-PDF exporter | T-SQL · Playwright · CDP |
+| [**office-automation-scripts**](https://github.com/Ark310/office-automation-scripts) | Weekly ticket-aging workbook and a daily due-response Teams reminder flow | pandas · Tkinter · Power Automate |
+
+### 📚 Documentation & Specs
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**confluence-to-guide-converter**](https://github.com/Ark310/confluence-to-guide-converter) | Offline pipeline turning a flat Confluence KB into a structured ReadMe guide site | Python · YAML · rdme |
+| [**workflow-spec-docs**](https://github.com/Ark310/workflow-spec-docs) | Functional specs for configurable project/category/status workflows (GitHub Pages) | HTML · CSS |
+
+### 🖥️ Systems & Infrastructure
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**gcc-server-2019-installer**](https://github.com/Ark310/gcc-server-2019-installer) | Reverse-engineered a consumer utility's installer and device DB to run it on Windows Server 2019 | PowerShell · Python · SQLite |
+
+### 🧪 Experimental
+
+| Project | What it does | Outcome |
+|---------|-------------|---------|
+| [**monthly-reports-automation**](https://github.com/Ark310/monthly-reports-automation) | API-first attempt at report automation | Superseded by report-downloader; failed attempts kept as engineering notes |
 
 ### 🌐 Web
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
 | [**HeartGuard**](https://github.com/Ark310/HeartGuard) | Apple-inspired single-page site with inline admin editing | PHP · Vanilla JS |
+
+<!-- BLNS: add the sanctions-screening RAG project here after the capture zip is integrated -->
 
 ---
 
@@ -129,7 +174,7 @@ Professional certifications and training across **Apple Support, Microsoft Azure
 
 ### AI & Automation
 
-`RAG Pipelines`, `Claude`, `Claude Code`, `ChromaDB`, `sentence-transformers`, `CrossEncoder Reranking`, `Prompt Engineering`, `Microsoft Copilot`, `Agentic Workflows`, `Playwright`, `Selenium`, `Chrome Extensions`, `Power Automate`
+`RAG Pipelines`, `Hybrid Retrieval (BM25/RRF)`, `Claude`, `Claude Code`, `Codex`, `Ollama / Local LLMs`, `ChromaDB`, `sentence-transformers`, `CrossEncoder Reranking`, `Prompt Engineering`, `Microsoft Copilot`, `Agentic Workflows`, `Playwright`, `Selenium`, `Chrome Extensions`, `Power Automate`
 
 ### Microsoft & Business Systems
 
