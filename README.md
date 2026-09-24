@@ -49,13 +49,19 @@ Outside traditional IT support, I build tools that automate repetitive work, imp
 
 ---
 
-## 🚀 Featured Project
+## 🚀 Featured Projects
 
 ### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant): *Scrape → Index → Chat, fully local*
 
 A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant**: ChromaDB vector search + BM25 with reciprocal-rank fusion, CrossEncoder reranking, **verified clickable citations**, PII-redacted ticket context, and a choice of Claude, ChatGPT or an **on-prem Ollama model** running on a local GPU. It grew over 361 commits, from a scraper to v3 "KB Guru", including a measured retrieval overhaul (recall@8 0.816 → 0.920).
 
 `Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (791 passing)`
+
+### [BLNS: Sanctions Screening RAG](https://github.com/Ark310/blns-sanctions-screening-rag): *local-GPU compliance AI*
+
+An offline assistant that adjudicates sanctions-screening alerts and recommends **FLAG / REVIEW / CLEAR** with deterministic evidence, cited analyst precedents and a confidence score. The analyst always decides. It began as a **QLoRA fine-tuning prototype** (Qwen 2.5 3B/7B → GGUF → Ollama); after evaluation it was **re-architected as RAG** over past decisions, with OFAC-style Jaro-Winkler name scoring done in code. The [journey](https://github.com/Ark310/blns-sanctions-screening-rag/blob/main/docs/JOURNEY.md) is documented step by step.
+
+`Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (368 passing)`
 
 ---
 
@@ -65,8 +71,8 @@ Every project below was built with **Claude Code** (and some with Codex) as a pa
 
 | | |
 |---|---|
-| 📦 **27 repositories** | 931 commits · Jan → Sep 2026 |
-| ✅ **3,000+ passing tests** | pytest suites across the desktop apps |
+| 📦 **28 repositories** | 1,022 commits · Jan → Sep 2026 |
+| ✅ **3,300+ passing tests** | pytest suites across the desktop apps |
 | 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
 | 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
 
@@ -78,6 +84,7 @@ Every project below was built with **Claude Code** (and some with Codex) as a pa
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
+| [**blns-sanctions-screening-rag**](https://github.com/Ark310/blns-sanctions-screening-rag) | Offline FLAG/REVIEW/CLEAR adjudicator for sanctions-screening alerts: deterministic OFAC-style scoring + RAG over past analyst decisions on an 8 GB GPU; started as a fine-tuning prototype | Ollama (qwen3:8b, bge-m3) · ChromaDB · FastAPI · .NET |
 | [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Scraper → markdown library → hybrid-RAG chatbot with verified citations and an on-prem LLM option | Playwright · ChromaDB · BM25/RRF · PySide6 · Claude · Ollama |
 | [**local-llm-setup**](https://github.com/Ark310/local-llm-setup) | Two local LLM stacks (a KYC analyst and the KB chatbot) on one 8 GB GPU, with a reasoning gateway | Ollama · PowerShell · Caddy |
 | [**enhancement-spec-generator**](https://github.com/Ark310/enhancement-spec-generator) | `/spec` Claude Code plugin: brain dump in, validated specification `.docx` out | Claude Code Skills · python-docx · pytest |
@@ -138,8 +145,6 @@ Every project below was built with **Claude Code** (and some with Codex) as a pa
 | Project | What it does | Stack |
 |---------|-------------|-------|
 | [**HeartGuard**](https://github.com/Ark310/HeartGuard) | Apple-inspired single-page site with inline admin editing | PHP · Vanilla JS |
-
-<!-- BLNS: add the sanctions-screening RAG project here after the capture zip is integrated -->
 
 ---
 
