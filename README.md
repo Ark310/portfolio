@@ -71,7 +71,7 @@ Every project below was built with **Claude Code** as a pair programmer (some wi
 
 | | |
 |---|---|
-| 📦 **28 repositories** | 1,022 commits · Jan → Sep 2026 |
+| 📦 **29 repositories** | 1,035 commits · Jan → Sep 2026 |
 | ✅ **3,300+ passing tests** | pytest suites across the desktop apps |
 | 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
 | 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
@@ -133,6 +133,12 @@ Every project below was built with **Claude Code** as a pair programmer (some wi
 | Project | What it does | Stack |
 |---------|-------------|-------|
 | [**gcc-server-2019-installer**](https://github.com/Ark310/gcc-server-2019-installer) | Reverse-engineered a consumer utility's installer and device DB to run it on Windows Server 2019 | PowerShell · Python · SQLite |
+
+### 🔐 Security
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [**web-app-security-assessment**](https://github.com/Ark310/web-app-security-assessment) | OWASP WSTG-aligned methodology and templates (RoE, checklist, severity model, report) from an authorized staging assessment. The assessment itself stays confidential | OWASP WSTG · CVSS · OWASP ZAP |
 
 ### 🧪 Experimental
 
