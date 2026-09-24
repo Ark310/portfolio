@@ -67,7 +67,7 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 
 ## 🤖 Shipping with AI
 
-Every project below was built with **Claude Code** (and some with Codex) as a pair programmer. I set direction, specs and review; the AI accelerates implementation and tests. Every commit carries a `Co-Authored-By: Claude` trailer, and each repo's README has a **Built with AI** section with real numbers.
+Every project below was built with **Claude Code** as a pair programmer (some with Codex; the earliest scripts from January–May 2026 were drafted with ChatGPT). I set direction, specs and review; the AI accelerates implementation and tests. Every commit carries a `Co-Authored-By: Claude` trailer, and each repo's README has a **Built with AI** section with real numbers.
 
 | | |
 |---|---|
@@ -94,7 +94,7 @@ Every project below was built with **Claude Code** (and some with Codex) as a pa
 | [**codex-skills**](https://github.com/Ark310/codex-skills) | Five Claude-style agent skills ported to Codex (feature dev, PR review, browser testing, data eng.) | Agent Skills · Markdown |
 | [**claude-config-transfer**](https://github.com/Ark310/claude-config-transfer) | Export/import a full Claude Code setup (settings, skills, plugins) to another Windows machine, no secrets | PowerShell |
 | [**claude-account-switcher**](https://github.com/Ark310/claude-account-switcher) 🍴 | Fork of usage-monitor-for-claude adding DPAPI-encrypted multi-account switching with rollback | Python · DPAPI · pytest |
-| [**usage-monitor-for-codex**](https://github.com/Ark310/usage-monitor-for-codex) 🍴 | Port of usage-monitor-for-claude to Codex: tray monitor for 5-hour and weekly limits | Python · JSON-RPC · pystray |
+| [**codex-usage-tray**](https://github.com/Ark310/codex-usage-tray) 🍴 | Port of usage-monitor-for-claude to Codex: tray monitor for 5-hour and weekly limits | Python · JSON-RPC · pystray |
 | [**observatory**](https://github.com/Ark310/observatory) 🍴 | Fork with additional session tracking, session management, and startup scanning | Bun · TypeScript · xterm.js · CodeMirror |
 
 ### ⚙️ Desktop & Browser Automation
