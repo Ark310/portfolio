@@ -148,11 +148,11 @@ Everything from my resumes and projects, grouped. **Where** each skill was used 
 
 ### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant): *Scrape → Index → Chat, fully local*
 
-A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant**: ChromaDB vector search + BM25 with reciprocal-rank fusion, CrossEncoder reranking, **verified clickable citations**, PII-redacted ticket context, and a choice of Claude, ChatGPT or an **on-prem Ollama model** running on a local GPU. It grew over 338 commits, from a scraper to v3 "KB Guru", including a measured retrieval overhaul (recall@8 0.816 → 0.920).
+A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant**: ChromaDB vector search + BM25 with reciprocal-rank fusion, CrossEncoder reranking, **verified clickable citations**, PII-redacted ticket context, and a choice of Claude, ChatGPT or an **on-prem Ollama model** running on a local GPU. It grew over about 360 commits, from a scraper to v3 "KB Guru", including a measured retrieval overhaul (recall@8 0.816 → 0.920).
 
 📈 *One assistant now answers from both the help site and years of ticket resolutions that used to be searched by hand.*
 
-`Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (791 passing)`
+`Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (812 tests)`
 
 ### [BLNS: Sanctions Screening RAG](https://github.com/Ark310/blns-sanctions-screening-rag): *local-GPU compliance AI*
 
@@ -171,7 +171,7 @@ Nearly every project below was built with **Claude Code** as a pair programmer (
 | | |
 |---|---|
 | 📦 **32 repositories** | 1,000+ commits of my own · Jan → Sep 2026 |
-| ✅ **3,400+ passing tests** | pytest and Vitest suites across the apps |
+| ✅ **3,500+ passing tests** | pytest and Vitest suites across the apps |
 | 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
 | 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
 | 💡 **Why + Impact** | every repo explains the problem it solved and what it changed |
