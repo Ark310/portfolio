@@ -1,21 +1,27 @@
 <h1 align="center">📜 Certifications</h1>
-<p align="center"><em>42 credentials across Cloud, AI, Security &amp; Networking — earned by Abdul Raqeeb Khatri.</em></p>
+<p align="center"><em>44 credentials across IT Support, Cloud, AI, Automation, Security &amp; Networking — earned by Abdul Raqeeb Khatri.</em></p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Apple-1-000000?style=flat-square&logo=apple&logoColor=white">
   <img src="https://img.shields.io/badge/AWS-33-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white">
   <img src="https://img.shields.io/badge/Anthropic-3-D4A27F?style=flat-square&logo=anthropic&logoColor=white">
   <img src="https://img.shields.io/badge/Cisco-3-1BA0D7?style=flat-square&logo=cisco&logoColor=white">
   <img src="https://img.shields.io/badge/Udemy-1-A435F0?style=flat-square&logo=udemy&logoColor=white">
-  <img src="https://img.shields.io/badge/Microsoft-1-0078D4?style=flat-square&logo=microsoft&logoColor=white">
+  <img src="https://img.shields.io/badge/Microsoft-2-0078D4?style=flat-square&logo=microsoft&logoColor=white">
   <img src="https://img.shields.io/badge/Google-1-4285F4?style=flat-square&logo=google&logoColor=white">
 </p>
 
-> A snapshot of continuous learning across the areas my projects live in: **Cloud (AWS · Azure)**, **AI (Anthropic)**, **Security & Networking (Cisco · Udemy)**, and **Automation (Google)**. Click any thumbnail to open the certificate. **40** include downloadable certificate files; **2** are listed with files coming soon. *More on the way.* ✨
+> A snapshot of continuous learning across the areas my projects live in: **IT Support (Apple)**, **Cloud (AWS · Azure)**, **Automation (Power Platform · Google)**, **AI (Anthropic)** and **Security & Networking (Cisco · Udemy)**. Click any thumbnail to open the certificate. **43** include downloadable certificate files; **1** is listed with its file coming soon, and ITIL Foundation is in progress. *More on the way.* ✨
 
 ---
 
 ## 🌟 Highlights
 
+<p align="center">
+  <a href="apple/apple-certified-support-technician.pdf"><img src="thumbnails/apple-certified-support-technician.png" width="200" title="Apple Certified Support Technician"></a>
+  <a href="microsoft/azure-fundamentals-az-900.pdf"><img src="thumbnails/azure-fundamentals-az-900.png" width="200" title="Microsoft Certified: Azure Fundamentals (AZ-900)"></a>
+  <a href="microsoft/power-platform-fundamentals-pl-900.pdf"><img src="thumbnails/power-platform-fundamentals-pl-900.png" width="200" title="Microsoft Certified: Power Platform Fundamentals (PL-900)"></a>
+</p>
 <p align="center">
   <a href="aws/simulearn-cloud-practitioner/aws-simulearn-cloud-practitioner.pdf"><img src="thumbnails/simulearn-cloud-practitioner-aws-simulearn-cloud-practitioner.png" width="200" title="AWS SimuLearn — Cloud Practitioner"></a>
   <a href="aws/aws-technical-essentials.pdf"><img src="thumbnails/aws-technical-essentials.png" width="200" title="AWS Technical Essentials"></a>
@@ -28,6 +34,15 @@
   <a href="cisco/network-support-and-security.pdf"><img src="thumbnails/network-support-and-security.png" width="200" title="Network Support and Security"></a>
   <a href="udemy/learn-ethical-hacking-from-scratch.pdf"><img src="thumbnails/learn-ethical-hacking-from-scratch.png" width="200" title="Learn Ethical Hacking From Scratch"></a>
 </p>
+
+---
+
+## 🍎 Apple
+*Issued by Apple · 2026*
+
+| Certificate | Granted | Expires | Link |
+|-------------|---------|---------|------|
+| **Apple Certified Support Technician (ACST)** | Aug 30, 2026 | Aug 30, 2029 | [PDF](apple/apple-certified-support-technician.pdf) |
 
 ---
 
@@ -124,11 +139,12 @@ Summary: [AWS Account Setup Learning Plan](aws/account-setup-learning-plan/aws-a
 ---
 
 ## 🟦 Microsoft
-*Issued by Microsoft*
+*Issued by Microsoft · 2026 · verifiable on Microsoft Learn*
 
-| Certificate | Status |
-|-------------|--------|
-| Azure Fundamentals (AZ-900) | ✅ Earned — *certificate file coming soon* |
+| Certificate | Earned | Link |
+|-------------|--------|------|
+| **Microsoft Certified: Azure Fundamentals (AZ-900)** | Sep 6, 2026 | [PDF](microsoft/azure-fundamentals-az-900.pdf) · [Verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/6165c24a5686fcbd) |
+| **Microsoft Certified: Power Platform Fundamentals (PL-900)** | Sep 17, 2026 | [PDF](microsoft/power-platform-fundamentals-pl-900.pdf) · [Verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/56886534f43945a9) |
 
 ---
 
@@ -138,6 +154,14 @@ Summary: [AWS Account Setup Learning Plan](aws/account-setup-learning-plan/aws-a
 | Certificate | Status |
 |-------------|--------|
 | IT Automation with Python | ✅ Earned — *certificate file coming soon* |
+
+---
+
+## 📘 In Progress
+
+| Certification | Status |
+|---------------|--------|
+| ITIL Foundation (Version 5) | 📚 In progress |
 
 ---
 
