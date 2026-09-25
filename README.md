@@ -6,12 +6,12 @@
 </p>
 
 <p align="center">
-  <a href="https://ark310.github.io"><img src="https://img.shields.io/badge/🌐_Interactive_Site-ark310.github.io-111111?style=flat-square"></a>
-  <a href="https://github.com/Ark310/experience"><img src="https://img.shields.io/badge/💼_Experience-Work_History-6f42c1?style=flat-square"></a>
-  <a href="mailto:abdulraqeebkhatri310@gmail.com"><img src="https://img.shields.io/badge/Email-abdulraqeebkhatri310@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/abdulraqeebkhatri"><img src="https://img.shields.io/badge/LinkedIn-abdulraqeebkhatri-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://github.com/Ark310"><img src="https://img.shields.io/badge/GitHub-Ark310-181717?style=flat-square&logo=github&logoColor=white"></a>
-  <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-44-success?style=flat-square&logo=googlescholar&logoColor=white"></a>
+  <a href="https://ark310.github.io"><img src="https://img.shields.io/badge/🌐_Interactive_Site-ark310.github.io-111111?style=flat-square" alt="🌐 Interactive Site-ark310.github.io"></a>
+  <a href="https://github.com/Ark310/experience"><img src="https://img.shields.io/badge/💼_Experience-Work_History-6f42c1?style=flat-square" alt="💼 Experience-Work History"></a>
+  <a href="mailto:abdulraqeebkhatri310@gmail.com"><img src="https://img.shields.io/badge/Email-abdulraqeebkhatri310@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email-abdulraqeebkhatri310@gmail.com"></a>
+  <a href="https://www.linkedin.com/in/abdulraqeebkhatri"><img src="https://img.shields.io/badge/LinkedIn-abdulraqeebkhatri-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn-abdulraqeebkhatri"></a>
+  <a href="https://github.com/Ark310"><img src="https://img.shields.io/badge/GitHub-Ark310-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub-Ark310"></a>
+  <a href="certifications/"><img src="https://img.shields.io/badge/Certifications-44-success?style=flat-square&logo=googlescholar&logoColor=white" alt="Certifications-44"></a>
 </p>
 
 ---
@@ -269,7 +269,7 @@ Nearly every project below was built with **Claude Code** as a pair programmer (
 - 🟪 **Microsoft Certified: Power Platform Fundamentals (PL-900)** (Microsoft, 2026) · [certificate](certifications/microsoft/power-platform-fundamentals-pl-900.pdf) · [verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/56886534f43945a9)
 - 🔐 **Network Support and Security** (Cisco)
 - 🖥️ **IT Customer Support Basics** (Cisco)
-- 🟨 **IT Automation with Python** (Google)
+- 🟨 **IT Automation with Python** (Google) · *certificate file coming soon*
 - 📘 **ITIL Foundation (Version 5)**: *in progress*
 
 ### Additional Training
