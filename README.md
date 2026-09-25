@@ -144,6 +144,60 @@ Everything from my resumes and projects, grouped. **Where** each skill was used 
 
 ---
 
+## 📜 Certifications
+
+**44 credentials** across **IT Support, Cloud, Automation, AI, Security and Networking**.
+
+### Key Certifications
+
+- 🍎 **Apple Certified Support Technician** (Apple, 2026) · [certificate](certifications/apple/apple-certified-support-technician.pdf)
+- 🟦 **Microsoft Certified: Azure Fundamentals (AZ-900)** (Microsoft, 2026) · [certificate](certifications/microsoft/azure-fundamentals-az-900.pdf) · [verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/6165c24a5686fcbd)
+- 🟪 **Microsoft Certified: Power Platform Fundamentals (PL-900)** (Microsoft, 2026) · [certificate](certifications/microsoft/power-platform-fundamentals-pl-900.pdf) · [verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/56886534f43945a9)
+- 🔐 **Network Support and Security** (Cisco)
+- 🖥️ **IT Customer Support Basics** (Cisco)
+- 🟨 **IT Automation with Python** (Google) · *certificate file coming soon*
+- 📘 **ITIL Foundation (Version 5)**: *in progress*
+
+### Additional Training
+
+- ☁️ **AWS**: AWS SimuLearn: Cloud Practitioner, Technical Essentials, EC2, S3, VPC, IAM, Lambda, and additional cloud training
+- 🤖 **Anthropic**: Claude 101, Claude Code 101, Introduction to Claude Cowork
+- 🔐 **Cisco**: Introduction to Cybersecurity and networking/security coursework
+- 🎯 **Udemy**: Learn Ethical Hacking From Scratch
+
+➡️ **[Browse the full certification gallery](certifications/)**
+
+---
+
+## 💼 Professional Experience
+
+My experience spans **technical support, enterprise systems, SaaS administration, endpoint support, user enablement, automation, and technology implementation** across retail technology, higher education and fintech. Highlights:
+
+- 🎫 **1,000+ concurrent SLA-driven tickets** managed through JIRA/ITSM workflows, from triage to closure
+- 👥 **250+ Windows and macOS users** supported across CRM, Microsoft 365, Google Workspace, MFA and connectivity
+- 🚀 **End-to-end CRM and VoIP rollouts** led from requirements through UAT, training and launch
+- ⚡ **Power Automate workflows** that cut a recurring process from several staff members to one, during **100%+ year-over-year admissions growth**
+- 🤖 **Privacy-sensitive local AI**: RAG knowledge tools and AI enablement for teams
+- 🏆 **Apple Applause Award** for performance and customer service
+
+➡️ **[Full work history, skills matrix and education](https://github.com/Ark310/experience)**
+
+---
+
+## 🤖 Shipping with AI
+
+Nearly every project below was built with **Claude Code** as a pair programmer (some with Codex; the earliest scripts from January–May 2026 were drafted with ChatGPT). I set direction, specs and review; the AI accelerates implementation and tests. Every commit carries a `Co-Authored-By: Claude` trailer, and each repo's README has a **Built with AI** section with real numbers.
+
+| | |
+|---|---|
+| 📦 **32 repositories** | 1,000+ commits of my own · Jan → Sep 2026 |
+| ✅ **3,500+ passing tests** | pytest and Vitest suites across the apps |
+| 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
+| 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
+| 💡 **Why + Impact** | every repo explains the problem it solved and what it changed |
+
+---
+
 ## 🚀 Featured Projects
 
 ### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant): *Scrape → Index → Chat, fully local*
@@ -161,20 +215,6 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 📈 *Turns a manual false-positive queue into an advisory pipeline, with no data leaving the machine.*
 
 `Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (368 passing)`
-
----
-
-## 🤖 Shipping with AI
-
-Nearly every project below was built with **Claude Code** as a pair programmer (some with Codex; the earliest scripts from January–May 2026 were drafted with ChatGPT). I set direction, specs and review; the AI accelerates implementation and tests. Every commit carries a `Co-Authored-By: Claude` trailer, and each repo's README has a **Built with AI** section with real numbers.
-
-| | |
-|---|---|
-| 📦 **32 repositories** | 1,000+ commits of my own · Jan → Sep 2026 |
-| ✅ **3,500+ passing tests** | pytest and Vitest suites across the apps |
-| 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
-| 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
-| 💡 **Why + Impact** | every repo explains the problem it solved and what it changed |
 
 ---
 
@@ -255,46 +295,6 @@ Nearly every project below was built with **Claude Code** as a pair programmer (
 |---|---|---|---|
 | [**HeartGuard**](https://github.com/Ark310/HeartGuard) | Apple-inspired single-page product site with a password-protected inline edit mode, with no framework and no build step. | Non-technical owners edit every word, image and section in the browser, with no CMS or database. | PHP · JavaScript · CSS |
 <!-- showcase:gallery:end -->
-
----
-
-## 📜 Certifications
-
-**44 credentials** across **IT Support, Cloud, Automation, AI, Security and Networking**.
-
-### Key Certifications
-
-- 🍎 **Apple Certified Support Technician** (Apple, 2026) · [certificate](certifications/apple/apple-certified-support-technician.pdf)
-- 🟦 **Microsoft Certified: Azure Fundamentals (AZ-900)** (Microsoft, 2026) · [certificate](certifications/microsoft/azure-fundamentals-az-900.pdf) · [verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/6165c24a5686fcbd)
-- 🟪 **Microsoft Certified: Power Platform Fundamentals (PL-900)** (Microsoft, 2026) · [certificate](certifications/microsoft/power-platform-fundamentals-pl-900.pdf) · [verify](https://learn.microsoft.com/en-ca/users/abdulkhatri-4075/credentials/56886534f43945a9)
-- 🔐 **Network Support and Security** (Cisco)
-- 🖥️ **IT Customer Support Basics** (Cisco)
-- 🟨 **IT Automation with Python** (Google) · *certificate file coming soon*
-- 📘 **ITIL Foundation (Version 5)**: *in progress*
-
-### Additional Training
-
-- ☁️ **AWS**: AWS SimuLearn: Cloud Practitioner, Technical Essentials, EC2, S3, VPC, IAM, Lambda, and additional cloud training
-- 🤖 **Anthropic**: Claude 101, Claude Code 101, Introduction to Claude Cowork
-- 🔐 **Cisco**: Introduction to Cybersecurity and networking/security coursework
-- 🎯 **Udemy**: Learn Ethical Hacking From Scratch
-
-➡️ **[Browse the full certification gallery](certifications/)**
-
----
-
-## 💼 Professional Experience
-
-My experience spans **technical support, enterprise systems, SaaS administration, endpoint support, user enablement, automation, and technology implementation** across retail technology, higher education and fintech. Highlights:
-
-- 🎫 **1,000+ concurrent SLA-driven tickets** managed through JIRA/ITSM workflows, from triage to closure
-- 👥 **250+ Windows and macOS users** supported across CRM, Microsoft 365, Google Workspace, MFA and connectivity
-- 🚀 **End-to-end CRM and VoIP rollouts** led from requirements through UAT, training and launch
-- ⚡ **Power Automate workflows** that cut a recurring process from several staff members to one, during **100%+ year-over-year admissions growth**
-- 🤖 **Privacy-sensitive local AI**: RAG knowledge tools and AI enablement for teams
-- 🏆 **Apple Applause Award** for performance and customer service
-
-➡️ **[Full work history, skills matrix and education](https://github.com/Ark310/experience)**
 
 ---
 
