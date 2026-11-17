@@ -95,7 +95,7 @@ Everything from my resumes and projects, grouped. **Where** each skill was used 
 <details>
 <summary><strong>🤖 AI & LLMs</strong> · 15 skills</summary>
 
-`Claude Code`, `OpenAI Codex`, `ChatGPT`, `RAG Pipelines`, `Hybrid Retrieval (BM25 + RRF)`, `CrossEncoder Reranking`, `ChromaDB`, `Ollama / Local LLMs`, `QLoRA Fine-Tuning`, `Prompt Engineering`, `Agentic / Spec-Driven Workflows`, `Claude Code Plugins & Skills`, `Microsoft 365 Copilot`, `AI Enablement & Training`, `Base44`
+`Claude Code`, `OpenAI Codex`, `ChatGPT`, `RAG Pipelines`, `Hybrid Retrieval (BM25 + RRF)`, `CrossEncoder Reranking`, `ChromaDB`, `Ollama / Local LLMs`, `pgvector / HNSW`, `Multi-Agent Systems`, `MCP`, `LLM Answer Verification`, `Whisper / pyannote`, `QLoRA Fine-Tuning`, `Prompt Engineering`, `Agentic / Spec-Driven Workflows`, `Claude Code Plugins & Skills`, `Microsoft 365 Copilot`, `AI Enablement & Training`, `Base44`
 
 </details>
 
@@ -109,14 +109,14 @@ Everything from my resumes and projects, grouped. **Where** each skill was used 
 <details>
 <summary><strong>📊 Data & Reporting</strong> · 12 skills</summary>
 
-`SQL / T-SQL`, `SQL Server`, `SQLite`, `pandas & NumPy`, `openpyxl`, `Advanced Excel`, `Power BI`, `Dashboard Development`, `Matplotlib`, `Data Visualization (R, MATLAB)`, `MongoDB`, `Kafka (fundamentals)`
+`SQL / T-SQL`, `SQL Server`, `PostgreSQL`, `SQLite`, `pandas & NumPy`, `openpyxl`, `Advanced Excel`, `Power BI`, `Dashboard Development`, `Matplotlib`, `Data Visualization (R, MATLAB)`, `MongoDB`, `Kafka (fundamentals)`
 
 </details>
 
 <details>
 <summary><strong>💻 Software Development</strong> · 17 skills</summary>
 
-`Java`, `JavaScript`, `TypeScript`, `C / C++`, `PHP`, `HTML & CSS`, `React`, `Next.js`, `FastAPI`, `Spring & Hibernate`, `PySide6 / Qt`, `Tkinter / CustomTkinter`, `.NET`, `pytest & TDD`, `Git & GitHub`, `Docker`, `VS Code`
+`Java`, `JavaScript`, `TypeScript`, `C / C++`, `PHP`, `HTML & CSS`, `React`, `Next.js`, `FastAPI`, `Spring & Hibernate`, `PySide6 / Qt`, `Tkinter / CustomTkinter`, `C# / .NET / ASP.NET Core`, `pytest & TDD`, `Git & GitHub`, `Docker`, `VS Code`
 
 </details>
 
@@ -190,10 +190,10 @@ Nearly every project below was built with **Claude Code** as a pair programmer (
 
 | | |
 |---|---|
-| 📦 **32 repositories** | 1,000+ commits of my own · Jan → Sep 2026 |
-| ✅ **3,500+ passing tests** | pytest and Vitest suites across the apps |
+| 📦 **40 repositories** | 1,300+ commits of my own · Jan → Nov 2026 |
+| ✅ **6,800+ passing tests** | pytest and Vitest suites across the apps, APIs and POCs |
 | 🧭 **Real history** | original commit dates and messages kept; pre-git work rebuilt from file timestamps |
-| 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit |
+| 🔒 **Sanitized** | employer, client and colleague names, internal hosts, credentials and data removed from every commit; product names replaced with pseudonyms |
 | 💡 **Why + Impact** | every repo explains the problem it solved and what it changed |
 
 ---
@@ -208,13 +208,37 @@ A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant
 
 `Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (812 tests)`
 
-### [BLNS: Sanctions Screening RAG](https://github.com/Ark310/blns-sanctions-screening-rag): *local-GPU compliance AI*
+### [ClearScreen](https://github.com/Ark310/clearscreen): *production screening-alert API* <sub>(pseudonym)</sub>
 
-An offline assistant that adjudicates sanctions-screening alerts and recommends **FLAG / REVIEW / CLEAR** with deterministic evidence, cited analyst precedents and a confidence score. The analyst always decides. It began as a **QLoRA fine-tuning prototype** (Qwen 2.5 3B/7B → GGUF → Ollama); after evaluation it was **re-architected as RAG** over past decisions, with OFAC-style Jaro-Winkler name scoring done in code. The [journey](https://github.com/Ark310/blns-sanctions-screening-rag/blob/main/docs/JOURNEY.md) is documented step by step.
+An official product, **in production with clients**, that auto-clears repeat and clearly non-matching sanctions-screening alerts and has an AI, **fact-checked by Python**, decide whether an analyst's earlier whitelisting reason still holds. Everything uncertain goes to a human. It is a multi-client FastAPI + SQL Server service on **AWS EC2 behind Cloudflare**, with a one-click hardened Windows installer (hash-pinned dependencies, DPAPI-encrypted secrets, only port 443 open), an Admin app, four guides and **9 releases in 9 days**. *ClearScreen is a pseudonym; the product's real name is withheld for confidentiality.*
 
-📈 *Turns a manual false-positive queue into an advisory pipeline, with no data leaving the machine.*
+📈 *Repeat and clear non-match alerts are cleared automatically with a full reason trail, so analysts only review what is genuinely uncertain.*
 
-`Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (368 passing)`
+`Python` · `FastAPI` · `SQL Server` · `bge-m3` · `configurable hosted LLM` · `Caddy` · `Cloudflare` · `AWS EC2` · `PowerShell installer`
+
+### [Enterprise Knowledge Platform](https://github.com/Ark310/enterprise-knowledge-platform): *evidence-checked product knowledge*
+
+The enterprise evolution of the Knowledge Base Assistant. A verified KB-site and API-docs scraper feeds **two local AI POCs**: documentation **gap analysis** over training recordings, and **cited Q&A** where an Assistant answers and an **independent Verifier** checks every claim against byte-exact excerpts. It runs on .NET 10 + Python with **PostgreSQL/pgvector** (halfvec HNSW + rerank + keyword + stemming), Ollama embeddings and sandboxed Codex agents, through 20+ versioned releases in two weeks. The repo also carries the design for the **API-first enterprise platform**: support-portal integration, SSO, client- and internal-facing audiences, tenant separation and ReadMe.io publishing (designed, not yet built).
+
+📈 *Answers are only published when every claim is backed by a cited excerpt, which is the bar for putting AI in front of clients.*
+
+`C#/.NET 10` · `ASP.NET Core` · `Python` · `PostgreSQL + pgvector` · `Ollama` · `Codex` · `Playwright` · `162 Python tests per release`
+
+### [Reporting Tools Suite](https://github.com/Ark310/reporting-tools-suite): *four tools, one desktop app*
+
+Merges the report downloader, weekly time ledger, incident scraper and resource matrix into **one PySide6 app** with a shared 2FA session broker (one sign-in per launch), keyring-backed settings, **golden-output tests** proving each tool calculates exactly as before, layered anti-tamper, and a **Nuitka-compiled build with an Inno Setup installer**.
+
+📈 *Four separate tools, logins and installs became one app with one sign-in.*
+
+`Python` · `PySide6` · `Playwright` · `keyring` · `Nuitka` · `Inno Setup` · `pytest (2,400+ passing)`
+
+### [BLNS: Sanctions Screening R&D](https://github.com/Ark310/blns-sanctions-screening-rag): *the research behind ClearScreen*
+
+An offline assistant that adjudicates sanctions-screening alerts and recommends **FLAG / REVIEW / CLEAR** with deterministic evidence, cited analyst precedents and a confidence score. The analyst always decides. It began as a **QLoRA fine-tuning prototype** (Qwen 2.5 3B/7B → GGUF → Ollama); after evaluation it was **re-architected as RAG** over past decisions, with OFAC-style Jaro-Winkler name scoring done in code. Then came four months of measured iterations: deterministic gates (0.27 s/row with no LLM errors), reuse of the team's past decisions (84% leave-one-out agreement), a 6-model bake-off and a whitelist-driven AI review. That work became **[ClearScreen](https://github.com/Ark310/clearscreen)**. The [journey](https://github.com/Ark310/blns-sanctions-screening-rag/blob/main/docs/JOURNEY.md) is documented step by step.
+
+📈 *Each design decision in the product is backed by a measured experiment here.*
+
+`Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (715 passing)`
 
 ---
 
@@ -227,8 +251,13 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 
 | Project | What it does | Impact | Stack |
 |---|---|---|---|
-| [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Scraper → markdown library → hybrid-RAG desktop chatbot with verified citations and an on-prem LLM option. | One desktop assistant answers from both the help site and past ticket resolutions, with clickable citations that are verified before they are shown. | Python · Playwright · ChromaDB · BM25/RRF |
-| [**blns-sanctions-screening-rag**](https://github.com/Ark310/blns-sanctions-screening-rag) | Offline FLAG / REVIEW / CLEAR adjudicator for sanctions-screening alerts: deterministic OFAC-style scoring plus RAG over past analyst decisions on an 8 GB GPU. | Turns a manual queue into an advisory pipeline that recommends FLAG, REVIEW or CLEAR with cited precedents from about 1,271 historical analyst decisions. The analyst always decides. | Python · Ollama · ChromaDB · FastAPI |
+| [**clearscreen**](https://github.com/Ark310/clearscreen) | *(pseudonym)* Production screening-alert API: deterministic match scoring, similar-case search and a per-record AI review fact-checked by Python. | In production with clients: repeat and clear non-match alerts are cleared automatically and everything uncertain goes to an analyst. 9 releases in 9 days. | Python · FastAPI · SQL Server · AWS · Cloudflare |
+| [**enterprise-knowledge-platform**](https://github.com/Ark310/enterprise-knowledge-platform) | Verified ingestion → pgvector hybrid retrieval → Assistant plus independent Verifier with byte-exact citations, plus the enterprise platform design (portal, SSO, ReadMe.io). | Two working POCs (documentation gap analysis and verified Q&A) through 20+ releases, each with a verification ledger. | .NET 10 · Python · PostgreSQL/pgvector · Ollama · Codex |
+| [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Scraper → markdown library → hybrid-RAG desktop chatbot with verified citations and an on-prem LLM option (continued in enterprise-knowledge-platform). | One desktop assistant answers from both the help site and past ticket resolutions, with clickable citations that are verified before they are shown. | Python · Playwright · ChromaDB · BM25/RRF |
+| [**blns-sanctions-screening-rag**](https://github.com/Ark310/blns-sanctions-screening-rag) | The R&D behind ClearScreen: fine-tune → RAG → deterministic gates → fact-checked AI review, with measured results at every step. | Four months of measured experiments (0.27 s/row gates, 84% leave-one-out agreement, a 6-model bake-off) that became a production product. | Python · FastAPI · Ollama · Groq · ChromaDB |
+| [**blns-api-bridge**](https://github.com/Ark310/blns-api-bridge) | .NET 8 / IIS reverse proxy that exposed the localhost-only screening engine through a route allow-list and constant-time key check. | Kept the Python/LLM engine off the network during the POC; later replaced by Caddy + Cloudflare in ClearScreen. | C# · ASP.NET Core · IIS |
+| [**onboarding-forms-mas**](https://github.com/Ark310/onboarding-forms-mas) | Multi-agent support assistant: docs-first answers, then a bounded read-only ticket search with layered PII redaction before any model sees the text. | Answers support questions from product docs and past tickets without exposing customer data to the model. | C#/.NET 10 · MCP · Playwright · Codex CLI |
+| [**video-transcriber**](https://github.com/Ark310/video-transcriber) | Local Whisper large-v3 + pyannote subtitle app that detects and re-decodes hallucinated spans and labels speakers. | Word accuracy against the Teams transcript rose from 92.5 to 95.5 after the repair step, fully on-device. | Python · faster-whisper · pyannote · CUDA |
 | [**local-llm-setup**](https://github.com/Ark310/local-llm-setup) | Two isolated local LLM workloads on one 8 GB GPU, behind an authenticated per-user LAN gateway. | Repeatable PowerShell automation replaces a hand-built setup: one model server, two named models, one active at a time. | Ollama · PowerShell · Caddy · Windows |
 | [**enhancement-spec-generator**](https://github.com/Ark310/enhancement-spec-generator) | A /spec Claude Code plugin: brain dump in, validated enhancement-specification .docx out. | A strict five-phase interview refuses to move on while any section is blank or vague, so every spec comes out complete. | Claude Code Skills · Python · python-docx · pytest |
 | [**claude-sessions-tracker**](https://github.com/Ark310/claude-sessions-tracker) | Desktop dashboard for local Claude Code sessions: tokens, models, subagents and one-click session management. | One screen shows every session with live token usage summed from the transcripts, never estimated. | Python · CustomTkinter · Matplotlib · watchdog |
@@ -251,12 +280,15 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 | [**ticket-watchlist-updater**](https://github.com/Ark310/ticket-watchlist-updater) | One-click sync of a live ticket export into a multi-sheet Excel watchlist. | The daily copy-paste became one click: export, back up, update every mapped column by ticket ID, and flag tickets that dropped off. | Python · Playwright · openpyxl · Tkinter |
 | [**enhancement-checks-automation**](https://github.com/Ark310/enhancement-checks-automation) | Five-phase Selenium clean-up of 147 enhancement tickets, with dry runs and Excel audit trails. | Audited and repaired 147 tickets in three working sessions instead of weeks of manual edits. | Python · Selenium · pandas · Tkinter |
 | [**ticket-auto-updater**](https://github.com/Ark310/ticket-auto-updater) | Chrome extension that fills the same four ticket fields and can press Update for you. | Repetitive field updates became a two-click action per ticket. | Chrome MV3 · JavaScript |
+| [**readai-meeting-downloader**](https://github.com/Ark310/readai-meeting-downloader) | Bulk exporter for Read AI meetings (recordings, reports, transcripts) into per-client folders. | A whole meeting archive exported and sorted in one run, with self-implemented OAuth 2.1 + PKCE and DPAPI-encrypted credentials. | Python · Tkinter · DPAPI · ffmpeg |
+| [**youtube-video-downloader**](https://github.com/Ark310/youtube-video-downloader) | One-window playlist and video downloader over yt-dlp, with quality presets and pause/resume. | Built the training-video corpus for the knowledge POCs. | Python · yt-dlp · ffmpeg · Tkinter |
 | [**tickets-due-response-monitor**](https://github.com/Ark310/tickets-due-response-monitor) | Daily queue monitor that posts threshold alerts to the team through Power Automate Desktop. | The team gets a message sized to the problem every weekday morning: nothing when the queue is short, and a clear call to action when it is too long. | Python · Playwright · pandas · Power Automate Desktop |
 
 ### 📊 Reporting & Analytics
 
 | Project | What it does | Impact | Stack |
 |---|---|---|---|
+| [**reporting-tools-suite**](https://github.com/Ark310/reporting-tools-suite) | Four reporting tools in one desktop app, with a shared 2FA session broker and a Nuitka + Inno Setup installer. | One install and one sign-in per launch instead of four, golden-tested to calculate exactly as the originals did. | Python · PySide6 · Playwright · Nuitka |
 | [**weekly-time-reports**](https://github.com/Ark310/weekly-time-reports) | A portal-driven desktop app that replaced a hand-maintained weekly timesheet workbook. | Replaced the manual workbook with a one-click run that outputs Excel, PDF and a scheduled Outlook email. | Python · PySide6 · Playwright · openpyxl |
 | [**resource-matrix**](https://github.com/Ark310/resource-matrix) | Monthly capacity, utilisation and sprint-load matrix per department and person, reconciled to the hour. | One screen and a one-click PDF answer capacity questions for any month. | Python · PySide6 · Playwright · T-SQL |
 | [**support-portal-dashboard-widgets**](https://github.com/Ark310/support-portal-dashboard-widgets) | SQL dashboard widgets (misclassification checks, SLA, open tickets) and the bugs behind the numbers. | Each widget ships with the SQL, the bug that was found and how it was fixed. | T-SQL · SQL Server |
@@ -281,7 +313,7 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 
 | Project | What it does | Impact | Stack |
 |---|---|---|---|
-| [**web-app-security-assessment**](https://github.com/Ark310/web-app-security-assessment) | OWASP WSTG-aligned methodology and templates from an authorized staging assessment. | Turns one assessment into a reusable kit: rules of engagement, checklist, severity model and report template. | OWASP WSTG · CVSS · OWASP ZAP |
+| [**web-app-security-assessment**](https://github.com/Ark310/web-app-security-assessment) | OWASP WSTG-aligned methodology and templates from an authorized staging assessment and its October follow-up. | Turns one assessment into a reusable kit: rules of engagement, checklist, severity model and report template. | OWASP WSTG · CVSS · OWASP ZAP |
 
 ### 🧪 Experimental
 
