@@ -21,7 +21,7 @@
 > |---|---|
 > | **30 seconds** | 🌐 [The interactive site](https://ark310.github.io): journey, project explorer, skills (press <kbd>~</kbd> for terminal mode) |
 > | **2 minutes** | 💼 [Experience](https://github.com/Ark310/experience): roles, impact numbers, skills matrix |
-> | **5 minutes** | ⭐ [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant) · [BLNS Sanctions RAG](https://github.com/Ark310/blns-sanctions-screening-rag) · [Weekly Time Reports](https://github.com/Ark310/weekly-time-reports) |
+> | **5 minutes** | ⭐ [ClearScreen](https://github.com/Ark310/clearscreen) · [Enterprise Knowledge Platform](https://github.com/Ark310/enterprise-knowledge-platform) · [Reporting Tools Suite](https://github.com/Ark310/reporting-tools-suite) |
 > | **The full picture** | 🗂️ [Project gallery](#gallery) below: 40 projects, each with *why I built it* and *impact* |
 
 ---
