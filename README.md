@@ -93,7 +93,7 @@ Everything from my resumes and projects, grouped. **Where** each skill was used 
 </details>
 
 <details>
-<summary><strong>🤖 AI & LLMs</strong> · 15 skills</summary>
+<summary><strong>🤖 AI & LLMs</strong> · 20 skills</summary>
 
 `Claude Code`, `OpenAI Codex`, `ChatGPT`, `RAG Pipelines`, `Hybrid Retrieval (BM25 + RRF)`, `CrossEncoder Reranking`, `ChromaDB`, `Ollama / Local LLMs`, `pgvector / HNSW`, `Multi-Agent Systems`, `MCP`, `LLM Answer Verification`, `Whisper / pyannote`, `QLoRA Fine-Tuning`, `Prompt Engineering`, `Agentic / Spec-Driven Workflows`, `Claude Code Plugins & Skills`, `Microsoft 365 Copilot`, `AI Enablement & Training`, `Base44`
 
@@ -107,7 +107,7 @@ Everything from my resumes and projects, grouped. **Where** each skill was used 
 </details>
 
 <details>
-<summary><strong>📊 Data & Reporting</strong> · 12 skills</summary>
+<summary><strong>📊 Data & Reporting</strong> · 13 skills</summary>
 
 `SQL / T-SQL`, `SQL Server`, `PostgreSQL`, `SQLite`, `pandas & NumPy`, `openpyxl`, `Advanced Excel`, `Power BI`, `Dashboard Development`, `Matplotlib`, `Data Visualization (R, MATLAB)`, `MongoDB`, `Kafka (fundamentals)`
 
