@@ -200,17 +200,10 @@ Nearly every project below was built with **Claude Code** as a pair programmer (
 
 ## 🚀 Featured Projects
 
-### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant): *Scrape → Index → Chat, fully local*
-
-A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant**: ChromaDB vector search + BM25 with reciprocal-rank fusion, CrossEncoder reranking, **verified clickable citations**, PII-redacted ticket context, and a choice of Claude, ChatGPT or an **on-prem Ollama model** running on a local GPU. It grew over about 360 commits, from a scraper to v3 "KB Guru", including a measured retrieval overhaul (recall@8 0.816 → 0.920).
-
-📈 *One assistant now answers from both the help site and years of ticket resolutions that used to be searched by hand.*
-
-`Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (812 tests)`
-
+<!-- showcase:hub-featured:start -->
 ### [ClearScreen](https://github.com/Ark310/clearscreen): *production screening-alert API* <sub>(pseudonym)</sub>
 
-An official product, **in production with clients**, that auto-clears repeat and clearly non-matching sanctions-screening alerts and has an AI, **fact-checked by Python**, decide whether an analyst's earlier whitelisting reason still holds. Everything uncertain goes to a human. It is a multi-client FastAPI + SQL Server service on **AWS EC2 behind Cloudflare**, with a one-click hardened Windows installer (hash-pinned dependencies, DPAPI-encrypted secrets, only port 443 open), an Admin app, four guides and **9 releases in 9 days**. *ClearScreen is a pseudonym; the product's real name is withheld for confidentiality.*
+The production-ready version of my [BLNS sanctions-screening RAG R&D](https://github.com/Ark310/blns-sanctions-screening-rag). An official product, **in production with clients**, that auto-clears repeat and clearly non-matching sanctions-screening alerts and has an AI, **fact-checked by Python**, decide whether an analyst's earlier whitelisting reason still holds. Everything uncertain goes to a human. It is a multi-client FastAPI + SQL Server service on **AWS EC2 behind Cloudflare**, with a one-click hardened Windows installer (hash-pinned dependencies, DPAPI-encrypted secrets, only port 443 open), an Admin app, four guides and **9 releases in 9 days**. *ClearScreen is a pseudonym; the product's real name is withheld for confidentiality.*
 
 📈 *Repeat and clear non-match alerts are cleared automatically with a full reason trail, so analysts only review what is genuinely uncertain.*
 
@@ -232,13 +225,38 @@ Merges the report downloader, weekly time ledger, incident scraper and resource 
 
 `Python` · `PySide6` · `Playwright` · `keyring` · `Nuitka` · `Inno Setup` · `pytest (2,400+ passing)`
 
-### [BLNS: Sanctions Screening R&D](https://github.com/Ark310/blns-sanctions-screening-rag): *the research behind ClearScreen*
+### [Knowledge Base Assistant](https://github.com/Ark310/knowledge-base-assistant): *Scrape → Index → Chat, fully local*
 
-An offline assistant that adjudicates sanctions-screening alerts and recommends **FLAG / REVIEW / CLEAR** with deterministic evidence, cited analyst precedents and a confidence score. The analyst always decides. It began as a **QLoRA fine-tuning prototype** (Qwen 2.5 3B/7B → GGUF → Ollama); after evaluation it was **re-architected as RAG** over past decisions, with OFAC-style Jaro-Winkler name scoring done in code. Then came four months of measured iterations: deterministic gates (0.27 s/row with no LLM errors), reuse of the team's past decisions (84% leave-one-out agreement), a 6-model bake-off and a whitelist-driven AI review. That work became **[ClearScreen](https://github.com/Ark310/clearscreen)**. The [journey](https://github.com/Ark310/blns-sanctions-screening-rag/blob/main/docs/JOURNEY.md) is documented step by step.
+A Confluence and support-ticket scraper feeding a **hybrid-RAG desktop assistant**: ChromaDB vector search + BM25 with reciprocal-rank fusion, CrossEncoder reranking, **verified clickable citations**, PII-redacted ticket context, and a choice of Claude, ChatGPT or an **on-prem Ollama model** running on a local GPU. It grew over about 360 commits, from a scraper to v3 "KB Guru", including a measured retrieval overhaul (recall@8 0.816 → 0.920).
+
+📈 *One assistant now answers from both the help site and years of ticket resolutions that used to be searched by hand.*
+
+`Python` · `Playwright` · `ChromaDB` · `BM25/RRF` · `CrossEncoder` · `PySide6` · `Claude` · `Ollama` · `pytest (812 tests)`
+
+### [BLNS: Sanctions Screening R&D](https://github.com/Ark310/blns-sanctions-screening-rag): *fine-tune → RAG → fact-checked AI review, measured at every step* <sub>(the RAG R&D that became ClearScreen)</sub>
+
+An offline assistant that adjudicates sanctions-screening alerts and recommends **FLAG / REVIEW / CLEAR** with deterministic evidence, cited analyst precedents and a confidence score. The analyst always decides. It began as a **QLoRA fine-tuning prototype** (Qwen 2.5 3B/7B → GGUF → Ollama); after evaluation it was **re-architected as RAG** over past decisions, with OFAC-style Jaro-Winkler name scoring done in code. Then came four months of measured iterations: deterministic gates (0.27 s/row with no LLM errors), reuse of the team's past decisions (84% leave-one-out agreement), a 6-model bake-off and a whitelist-driven AI review. That work became **[ClearScreen](https://github.com/Ark310/clearscreen)**, its production-ready version. The [journey](https://github.com/Ark310/blns-sanctions-screening-rag/blob/main/docs/JOURNEY.md) is documented step by step.
 
 📈 *Each design decision in the product is backed by a measured experiment here.*
 
 `Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (715 passing)`
+
+### [Claude Sessions Tracker](https://github.com/Ark310/claude-sessions-tracker): *every Claude Code session on one screen*
+
+A local desktop dashboard that reads Claude Code's own session files under `~/.claude/` and shows every session and subagent in a tabbed UI: **live token usage summed from the JSONL transcripts (never estimated)**, the model each one runs on, and daily charts with a per-session breakdown. Sessions can be **killed, renamed or deleted in one click**. It needs **no network access and no API key**, and was built in about five hours across 32 commits.
+
+📈 *One screen shows what is still running, on which model, and where the tokens are going.*
+
+`Python` · `CustomTkinter` · `Matplotlib` · `watchdog` · `SQLite` · `pytest (30 tests)`
+
+### [Weekly Time Reports](https://github.com/Ark310/weekly-time-reports): *a weekly timesheet workbook, rebuilt as an app*
+
+A PySide6 desktop app that replaced a hand-maintained weekly timesheet workbook. A Playwright session pulls the time ledger, leave and holidays from the support portal, computes **availability-aware hours**, and produces **Excel, PDF and a scheduled Outlook email** in one click. An audit of the old workbooks found five arithmetic defects; before cut-over the app **matched the legacy workbook 48 of 48**, and every deviation is logged instead of silently copied. 11 tagged releases in 31 days.
+
+📈 *A report built by hand every week became a one-click run, with the old workbook's defects found and logged instead of copied.*
+
+`Python` · `PySide6` · `Playwright` · `openpyxl` · `Outlook` · `pytest (811 tests)`
+<!-- showcase:hub-featured:end -->
 
 ---
 
@@ -251,10 +269,10 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 
 | Project | What it does | Impact | Stack |
 |---|---|---|---|
-| [**clearscreen**](https://github.com/Ark310/clearscreen) | *(pseudonym)* Production screening-alert API: deterministic match scoring, similar-case search and a per-record AI review fact-checked by Python. | In production with clients: repeat and clear non-match alerts are cleared automatically and everything uncertain goes to an analyst. 9 releases in 9 days. | Python · FastAPI · SQL Server · AWS · Cloudflare |
+| [**clearscreen**](https://github.com/Ark310/clearscreen) | *(pseudonym)* The production-ready version of my BLNS sanctions-screening RAG R&D: a client-facing API with deterministic match scoring, similar-case search and a per-record AI review fact-checked by Python. | In production with clients: repeat and clear non-match alerts are cleared automatically and everything uncertain goes to an analyst. 9 releases in 9 days. | Python · FastAPI · SQL Server · AWS · Cloudflare |
 | [**enterprise-knowledge-platform**](https://github.com/Ark310/enterprise-knowledge-platform) | Verified ingestion → pgvector hybrid retrieval → Assistant plus independent Verifier with byte-exact citations, plus the enterprise platform design (portal, SSO, ReadMe.io). | Two working POCs (documentation gap analysis and verified Q&A) through 20+ releases, each with a verification ledger. | .NET 10 · Python · PostgreSQL/pgvector · Ollama · Codex |
 | [**knowledge-base-assistant**](https://github.com/Ark310/knowledge-base-assistant) | Scraper → markdown library → hybrid-RAG desktop chatbot with verified citations and an on-prem LLM option (continued in enterprise-knowledge-platform). | One desktop assistant answers from both the help site and past ticket resolutions, with clickable citations that are verified before they are shown. | Python · Playwright · ChromaDB · BM25/RRF |
-| [**blns-sanctions-screening-rag**](https://github.com/Ark310/blns-sanctions-screening-rag) | The R&D behind ClearScreen: fine-tune → RAG → deterministic gates → fact-checked AI review, with measured results at every step. | Four months of measured experiments (0.27 s/row gates, 84% leave-one-out agreement, a 6-model bake-off) that became a production product. | Python · FastAPI · Ollama · Groq · ChromaDB |
+| [**blns-sanctions-screening-rag**](https://github.com/Ark310/blns-sanctions-screening-rag) | The RAG R&D that became ClearScreen: fine-tune → RAG → deterministic gates → fact-checked AI review, with measured results at every step. | Four months of measured experiments (0.27 s/row gates, 84% leave-one-out agreement, a 6-model bake-off) that became ClearScreen, its production-ready version. | Python · FastAPI · Ollama · Groq · ChromaDB |
 | [**blns-api-bridge**](https://github.com/Ark310/blns-api-bridge) | .NET 8 / IIS reverse proxy that exposed the localhost-only screening engine through a route allow-list and constant-time key check. | Kept the Python/LLM engine off the network during the POC; later replaced by Caddy + Cloudflare in ClearScreen. | C# · ASP.NET Core · IIS |
 | [**onboarding-forms-mas**](https://github.com/Ark310/onboarding-forms-mas) | Multi-agent support assistant: docs-first answers, then a bounded read-only ticket search with layered PII redaction before any model sees the text. | Answers support questions from product docs and past tickets without exposing customer data to the model. | C#/.NET 10 · MCP · Playwright · Codex CLI |
 | [**video-transcriber**](https://github.com/Ark310/video-transcriber) | Local Whisper large-v3 + pyannote subtitle app that detects and re-decodes hallucinated spans and labels speakers. | Word accuracy against the Teams transcript rose from 92.5 to 95.5 after the repair step, fully on-device. | Python · faster-whisper · pyannote · CUDA |
