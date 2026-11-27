@@ -239,7 +239,7 @@ An offline assistant that adjudicates sanctions-screening alerts and recommends 
 
 📈 *Each design decision in the product is backed by a measured experiment here.*
 
-`Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (715 passing)`
+`Python` · `Ollama (qwen3:8b, bge-m3)` · `ChromaDB` · `FastAPI` · `.NET 8` · `RTX 5060 Ti 8 GB` · `pytest (727 tests)`
 
 ### [Claude Sessions Tracker](https://github.com/Ark310/claude-sessions-tracker): *every Claude Code session on one screen*
 
